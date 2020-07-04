@@ -10,10 +10,10 @@ var wind = 1;
 var windtim = 3;
 var cutremp = 28;
 var rescreen;
-var gobtn = "<input type='button' value='✿' onclick='go();'>"
+var gobtn = "<input type='button' value='  ❤  ' onclick='go();'>"
 
 function init(){
-	document.getElementById("tap").innerHTML="<input type='button' value='➤' onclick='startg()'>";
+	document.getElementById("tap").innerHTML="<input type='button' value='  ➤  ' onclick='startg()'>";
 }
 
 function startg(){
@@ -73,7 +73,7 @@ function refresh(){
 		rescreen = setTimeout("refresh()",1000);
 	}
 	else{
-		document.getElementById("tap").innerHTML="<input type='button' value='↻' onclick='startg();'><br>Score:"+score;
+		document.getElementById("tap").innerHTML="<input type='button' value='  ↻  ' onclick='startg();'><br>Score:"+score;
 		clearTimeout(rescreen);
 	}
 }
