@@ -17,6 +17,7 @@ function init(){
 }
 
 function startg(){
+	step = 0;
 	score = 0;
 	time = 60;
 	wind = 1;
@@ -73,7 +74,7 @@ function refresh(){
 		rescreen = setTimeout("refresh()",1000);
 	}
 	else{
-		document.getElementById("tap").innerHTML="<input type='button' value='  ↻  ' onclick='startg();'><br>Score:"+score;
+		document.getElementById("tap").innerHTML="<input type='button' value='  ↻  ' onclick='startg();'><br><br>Score:"+score;
 		clearTimeout(rescreen);
 	}
 }

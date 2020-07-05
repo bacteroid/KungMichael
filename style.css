@@ -111,8 +111,8 @@ input[type="button"]{
     background-color:white;
     border-radius:8px;
     text-align:center;
-    font-size:2vmin;
-    height:4vmin;
+    font-size:3vmin;
+    height:5vmin;
     box-shadow: 5px 5px 10px #d9d9d9, 
              -5px -5px 10px #ffffff;
     vertical-align: middle;
@@ -125,8 +125,8 @@ input[type="submit"]{
     background-color:white;
     border-radius:8px;
     text-align:center;
-    font-size:2vmin;
-    height:4vmin;
+    font-size:3vmin;
+    height:5vmin;
     box-shadow: 5px 5px 10px #d9d9d9, 
              -5px -5px 10px #ffffff;
     vertical-align: middle;
