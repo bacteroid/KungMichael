@@ -8,9 +8,9 @@ var score = 0;
 var time = 60;
 var wind = 1;
 var windtim = 3;
-var cutremp = 28;
+var curtemp = 28;
 var rescreen;
-var gobtn = "<input type='button' value='  ❤  ' onclick='go();'>"
+var gobtn = "<input type='button' value=' ٩><)٩``｡｡ ' onclick='go();'>"
 
 function init(){
 	document.getElementById("tap").innerHTML="<input type='button' value='  ➤  ' onclick='startg()'>";
@@ -22,34 +22,52 @@ function startg(){
 	time = 60;
 	wind = 1;
 	stage = 1;
-	cutremp = 28;
-	document.getElementById("tap").innerHTML="<div id ='time'>☀"+cutremp+"℃ ⌛"+time+" ❦"+score+"</div><br><div id ='screen'></div><br>"+gobtn;
+	curtemp = 28;
+	document.getElementById("tap").innerHTML="<div id ='time'>🌞"+curtemp+"℃ ⌛"+time+" 🥤"+score+"</div><br><div id ='screen'></div><br>"+gobtn;
 	drawm(0);
 	rescreen = setTimeout("refresh()",1000);
 }
 
 function drawm(blow){
+	var floor;
+	if(curtemp>50){
+		floor="🔥";
+	}
+	else if(curtemp>40){
+		floor="♨"
+	}
+	else{
+		floor="🌲";
+	}
 	curmap="";
 	alllen = 10;
 	tot = parseInt((step/(totalen*stage))*100);
 	stp = parseInt(tot/alllen);
-	curmap+="❦";
+	curmap+="🥤";
 	for(var i=0; i<alllen-stp; i++){
-		curmap+="_";
+		curmap+=floor;
 	}
 	if(blow==1){
-		curmap+="⇶";
-		curmap+="⍢";
+		curmap+="🌫";
+		curmap+="😖";
 		for(var i=0; i<stp-2; i++){
-			curmap+="_";
+			curmap+=floor;
 		}
 		document.getElementById("screen").innerHTML=curmap;
 		setTimeout("drawm(0)",100);
 	}
 	else{
-		curmap+="⍢";
-		for(var i=0; i<stp-1; i++){
-			curmap+="_";
+		if(curtemp>40){
+			curmap+="😶💦";
+			for(var i=0; i<stp-2; i++){
+				curmap+=floor;
+			}
+		}
+		else{
+			curmap+="😶";
+			for(var i=0; i<stp-1; i++){
+				curmap+=floor;
+			}
 		}
 		document.getElementById("screen").innerHTML=curmap;
 	}
@@ -70,11 +88,11 @@ function refresh(){
 	}
 	if(time > 0){
 		time-=1;
-		document.getElementById("time").innerHTML="☀"+cutremp+"℃ ⌛"+time+" ❦"+score;
+		document.getElementById("time").innerHTML="🌞"+curtemp+"℃ ⌛"+time+" 🥤"+score;
 		rescreen = setTimeout("refresh()",1000);
 	}
 	else{
-		document.getElementById("tap").innerHTML="<input type='button' value='  ↻  ' onclick='startg();'><br><br>Score:"+score;
+		document.getElementById("tap").innerHTML="<input type='button' value='  ↻  ' onclick='init();'><br><br>🥤❤️😶<br><br>"+score;
 		clearTimeout(rescreen);
 	}
 }
@@ -88,7 +106,8 @@ function go(){
 	}
 	else{
 		stage+=1;
-		cutremp+=stage;
+		time+=5;
+		curtemp+=stage;
 		score+=100;
 		step=0;
 		drawm(0);
