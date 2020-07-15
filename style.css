@@ -115,7 +115,7 @@ input[type="button"]{
     text-align:center;
     font-size:calc(12px + 1vmin);
     height:4vmin;
-    min-height:30;
+    min-height:30px;
     box-shadow: 5px 5px 10px #d9d9d9, 
              -5px -5px 10px #ffffff;
     vertical-align: middle;
@@ -130,7 +130,7 @@ input[type="submit"]{
     text-align:center;
     font-size:calc(12px + 1vmin);
     height:4vmin;
-    min-height:30;
+    min-height:30px;
     box-shadow: 5px 5px 10px #d9d9d9, 
              -5px -5px 10px #ffffff;
     vertical-align: middle;
