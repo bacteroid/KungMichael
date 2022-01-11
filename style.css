@@ -64,6 +64,25 @@ canvas {
     font-size: 5vmin;
 }
 
+.pill {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 1px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.qrcod {
+	border-radius: 20px;
+	box-shadow:  7px 7px 16px #d0d0d0,
+             -7px -7px 16px #f0f0f0;
+}
+
 #incrd{
     width:100%;
     height:100%;
@@ -78,15 +97,27 @@ canvas {
 #neumorphismcrd{
     overflow:hidden;
     vertical-align: middle;
+	text-align:center;
     display: table;
     width:80%;
     height:auto;
     font-size: 5vmin;
     border-radius: 20px;
-    background: #F1FFFA;
     opacity:0.8;
-    box-shadow:  20px 20px 60px #d9d9d9, 
-             -20px -20px 60px #ffffff;
+    box-shadow:  7px 7px 16px #d0d0d0,
+             -7px -7px 16px #f0f0f0;
+}
+
+#intable{
+	width:85%;
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+hr {
+width: 50%;
+margin-left: auto;
+margin-right: auto;
 }
 
 textarea,
