@@ -14,14 +14,14 @@
 	<br>
 	<div id="Icon"><img src="icon.png" alt="Photo" width=100% height=100%/></div>
 	<br><br>
-	<h1>[ Michael Kung ]</h1>
-	<h5>Hello!</h5>
+	<strong><font size="100 vmin">[ Michael Kung ]</font><br><br>
+	<strong><font size="50 vmin">Hello!</font>
 	<br><br>
 	<div id="neumorphismcrd" class="boxfdin">
 	<div id="incrd">
 	<br>❖ Title ❖<br><br>
-	<strong><font size="5em">[ Research Assistant ]</font></strong><br><br>
-	<font color="grey" size="1em">Linkou Chang Gung Memorial Hospital</font>
+	<strong><font size="5em">Research Assistant</font></strong><br><br>
+	<font color="grey" size="1em">Linkou Chang Gung<br>Memorial Hospital</font>
 	<br><br>
 	</div>
 	</div>
@@ -32,18 +32,25 @@
 	<br>❖ Educations ❖<br><br>
 	<table id="intable">
     <tr><td align="middle">
-	<strong>College (2013-2017)</strong>
+	<strong>College (2013-2017)</strong><br><br>
     </td></tr>
 	<tr><td align="middle">
-	National Chung Hsing University, Department of Entomology<br>
-	Minored in Department of Plant Pathology<br>
-	<br>
+	<font color="grey" size="1em">
+	National Chung Hsing University<br>
+	Department of Entomology<br>
+	Minored in<br>
+	Department of Plant Pathology
+	</font><br>
+	<br><hr><br>
     </td></tr>
 	<tr><td align="middle">
-	<strong>Graduate School (2018-2020)</strong>
+	<strong>Graduate School (2018-2020)</strong><br><br>
     </td></tr>
 	<tr><td align="middle">
-	National Yang-Ming University, Institute of Biomedical Informatics
+	<font color="grey" size="1em">
+	National Yang-Ming University<br>
+	Institute of Biomedical Informatics
+	</font><br>
     </td></tr>
     </table>
 	<br>
@@ -90,7 +97,7 @@
 	<table id="intable">
 	<tr><td align="middle">
 	My research interests are in Bioinformatics, Health record data processing, Machine
-	learning, Human microbiome and Line chat bot.<br>
+	learning, Human microbiome and Line chatbot.<br>
 	In addition to biomedical data analysis, I
 	am also willing to try other researching methods and topics, such as computer image
 	processing, deep learning applications, etc.
@@ -221,10 +228,10 @@
 	<div id="neumorphismcrd" class="boxfdin">
 	<div id="incrd">
 	<br>
-	<h6>❖ Chat With My Bot ! (Beta) ❖</h6>
-	<br>
+	❖ Chat With My Bot ! (Beta) ❖
+	<br><br>
 	<img src="https://qr-official.line.me/sid/M/327ptfrm.png" class="qrcod"><br><br>
-	<a href="https://lin.ee/1JJ3USk"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="MimOSa" height="36" border="0"></a>
+	<a href="https://lin.ee/1JJ3USk"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="MimOSa" height="36" border="0" class="qrcod"></a>
 	<br><br>
 	</div>
 	</div>
@@ -233,25 +240,8 @@
 	<div id="neumorphismcrd" class="boxfdin">
 	<div id="incrd">
 	<br>
-	<script type="text/javascript">
-		function QRCod(){
-			url = 'http://chart.apis.google.com/chart?cht=qr&chl=' + location.href + '&chs=500x500';
-			document.getElementById('sharkod').innerHTML = '<img src="' + url + '" alt="" height="100px" class="qrcod" />';
-		}
-	</script>
-	<h6>❖ Share This Page ❖</h6><br>
-	<div id="sharkod"></div>
-	<script>QRCod();</script>
-	<br>
-	</div>
-	</div>
-	<br>
-	
-	<div id="neumorphismcrd" class="boxfdin">
-	<div id="incrd">
-	<br>
-	<h6>❖ Contact Me ❖</h6>
-	<br>
+	❖ Contact Me ❖
+	<br><br>
 	<table  id="intable" style="text-align:center;">
 	<tr><td >
 	<a href="mailto:mickungfr@gmail.com" class="fa fa-envelope fa-lg" style="text-decoration: none; color:black;"></a>
@@ -275,6 +265,7 @@
 	<br>
 	</div>
 	</div>
+	<br>
 	
 	<script>
         const desiredRepo = "KungMichael";
@@ -292,7 +283,7 @@
               {
                 var lastUpdated = new Date(repo.updated_at);
                 var day = lastUpdated.getUTCDate();
-                var month = lastUpdated.getUTCMonth();
+                var month = lastUpdated.getUTCMonth()+1;
                 var year = lastUpdated.getUTCFullYear();
                 document.getElementById('updat').innerHTML = year+"-"+month+"-"+day;
               }
@@ -301,7 +292,26 @@
         };
         xhttp.open("GET", "https://api.github.com/users/bacteroid/repos", true);
         xhttp.send();
+		
+		function QRCod(){
+			url = 'http://chart.apis.google.com/chart?cht=qr&chl=' + location.href + '&chs=500x500';
+			document.getElementById('sharkod').innerHTML = '<img src="' + url + '" alt="" height="50px" style="border-radius: 10px;" />';
+		}
 	</script>
-	<br><br>Last Update<br><div id="updat"></div><br><br>
+	
+	<div class="pill" style="width:40vmin;">
+	<table width="100%">
+	<tr><td width="20%">
+	<div id="sharkod"></div>
+	<script>QRCod();</script>
+	</td><td width="5%">
+	</td><td width="75%">
+	<strong>Last Update <div id="updat"></div></strong>
+	</td>
+	</td></tr>
+	</table>
+	</div>
+	<br><br>
+	
 	</center>
 </body>

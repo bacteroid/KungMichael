@@ -78,7 +78,7 @@ canvas {
 }
 
 .qrcod {
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow:  7px 7px 16px #d0d0d0,
              -7px -7px 16px #f0f0f0;
 }
