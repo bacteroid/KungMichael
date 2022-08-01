@@ -54,7 +54,7 @@ function drawm(blow){
 			curmap+=floor;
 		}
 		document.getElementById("screen").innerHTML=curmap;
-		setTimeout("drawm(0)",100);
+		setTimeout("drawm(0)",1000);
 	}
 	else{
 		if(curtemp>40){
@@ -92,7 +92,7 @@ function refresh(){
 		rescreen = setTimeout("refresh()",1000);
 	}
 	else{
-		document.getElementById("tap").innerHTML="<input type='button' value='  ↻  ' onclick='init();'><br><br>🥤❤️😶<br><br>"+score;
+		document.getElementById("tap").innerHTML="<br>🥤❤️😶<br><br>"+score+"<br><br><input type='button' value='  ↻  ' onclick='init();'>";
 		clearTimeout(rescreen);
 	}
 }
