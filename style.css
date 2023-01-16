@@ -359,16 +359,20 @@ iframe{
 @media print
 {
 
-.page-break  {
-	display:block;
-	page-break-before:always;
-	
-}
+	.page-break  {
+		display:block;
+		page-break-before:always;
+		
+	}
 
-#neumorphismcrd {
-    -webkit-box-shadow: none;
-    -moz-box-shadow:    none;
-    box-shadow:         none; 
-  }
+	#neumorphismcrd {
+		-webkit-box-shadow: none;
+		-moz-box-shadow:    none;
+		box-shadow:         none; 
+	  }
+
+	.noprint {
+		  visibility: hidden;
+	}
 
 }
